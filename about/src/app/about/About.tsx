@@ -7,7 +7,7 @@ export const About = () => {
 		<div className='flex flex-col items-center scroll-m-20' id='about'>
 			<div className='flex flex-col items-center'>
 				<h1 className='font-header text-7xl font-extralight'>
-					Hello, I$apos;m <span className='font-semibold'>Nicole Blanchette.</span>
+					Hello, I&apos;m <span className='font-semibold'>Nicole Blanchette.</span>
 				</h1>
 				<p className='italic'>
 					...A Full-Stack Web Developer specializing in the MERN/PERN tech

@@ -1,6 +1,6 @@
 export const Navbar = () => {
 	return (
-		<div className='navbar bg-base-100 font-header strsticky top-0 z-10'>
+		<div className='navbar bg-base-100 font-header sticky top-0 z-10'>
 			<div className='flex-1'>
 				<a className='btn btn-ghost text-3xl font-bold'>Nicole Blanchette</a>
 				<label className='swap swap-rotate'>
@@ -29,11 +29,13 @@ export const Navbar = () => {
 			<div className='flex-none'>
 				<ul className='menu menu-horizontal px-1 text-3xl font-light items-center'>
 					<li>
-						<a>About</a>
+						<a href='#about' className='scroll-smooth'>
+							About
+						</a>
 					</li>
 					<p>✧</p>
 					<li>
-						<a>Projects</a>
+						<a href='#projects'>Projects</a>
 					</li>
 					<p>✧</p>
 					<li>
@@ -41,13 +43,28 @@ export const Navbar = () => {
 							<summary>Contact</summary>
 							<ul className='bg-base-100 rounded-t-none p-2'>
 								<li>
-									<a>Github</a>
+											<a
+							href='https://github.com/nicoleblanchette'
+							target='_blank'
+							rel='noopener noreferrer'
+						>GitHub</a>
 								</li>
 								<li>
-									<a>LinkedIn</a>
+									<a
+										href='https://linkedin.com/in/nicole-blanchette'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										LinkedIn
+									</a>
 								</li>
 								<li>
-									<a>Email</a>
+									<a
+										href='mailto:nicolesupdates@gmail.com'
+										rel='noopener noreferrer'
+									>
+										Email
+									</a>
 								</li>
 							</ul>
 						</details>

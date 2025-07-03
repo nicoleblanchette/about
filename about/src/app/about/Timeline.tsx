@@ -26,12 +26,7 @@ export const Timeline = () => {
 							<div className='text-lg font-black flex gap-1'>
                 {role.title}{role.company && <p className="font-normal italic">@ {role.company}</p>}
 							</div>
-							The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-							original Apple Macintosh personal computer. It played a pivotal
-							role in establishing desktop publishing as a general office
-							function. The motherboard, a 9 in (23 cm) CRT monitor, and a
-							floppy drive were housed in a beige case with integrated carrying
-							handle; it came with a keyboard and single-button mouse.
+              <p>{role.description}</p>
 						</div>
 						{role.company !== "The Marcy Lab School" && <hr className="bg-primary"/>}
 					</li>

@@ -1,38 +1,47 @@
 export const projects = [
-	// add alt text pls
 	{
 		name: "Collective",
-		coverImg:
-			"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsite-547756.mozfiles.com%2Ffiles%2F547756%2Fmedium%2Fcatoutside.jpeg&f=1&nofb=1&ipt=b2e0d51c29f7114320c92a7cbb63ddcdde678f08fe187ac18f4e88c50780fb0c",
+		coverImg: "collective.jpg",
+		coverImgAlt: "Inside of closet",
 		description:
 			"Collective allows users to give and receive free clothing in their area, combating textile waste and strengthening communities.",
-		githubLink: "githubLink",
-		deployment: "liveSite",
+		githubLink: "https://github.com/ENiA-collective/collective",
+		deployment: "https://collective-g93u.onrender.com/",
 	},
 	{
 		name: "Job Spicy",
-		coverImg:
-			"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsite-547756.mozfiles.com%2Ffiles%2F547756%2Fmedium%2Fcatoutside.jpeg&f=1&nofb=1&ipt=b2e0d51c29f7114320c92a7cbb63ddcdde678f08fe187ac18f4e88c50780fb0c",
+		coverImg: "job-spicy.jpg",
+		coverImgAlt: "A pile of chili peppers",
 		description:
 			"JobSpicy is a global remote job board. Jobs can be narrowed down by keyword, industry, and location for a more personalized experience.",
-		githubLink: "githubLink",
-		deployment: "liveSite",
+		githubLink: "https://github.com/Job-Spicy/job-spicy",
+		deployment: "https://job-spicy.github.io/job-spicy/",
 	},
 	{
 		name: "Flappy Bird",
-		coverImg:
-			"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsite-547756.mozfiles.com%2Ffiles%2F547756%2Fmedium%2Fcatoutside.jpeg&f=1&nofb=1&ipt=b2e0d51c29f7114320c92a7cbb63ddcdde678f08fe187ac18f4e88c50780fb0c",
+		coverImg: "flappy-bird.jpg",
+		coverImgAlt: "Screenshot of a flappy bird clone",
 		description: "A clone of the viral game!",
-		githubLink: "githubLink",
-		deployment: "liveSite",
+		githubLink: "https://github.com/nicoleblanchette/flappy-bird",
+		deployment: "https://nicoleblanchette.github.io/flappy-bird/",
 	},
 	{
 		name: "NaDa - NASA Viewer",
-		coverImg:
-			"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsite-547756.mozfiles.com%2Ffiles%2F547756%2Fmedium%2Fcatoutside.jpeg&f=1&nofb=1&ipt=b2e0d51c29f7114320c92a7cbb63ddcdde678f08fe187ac18f4e88c50780fb0c",
+		coverImg: "nada.jpg",
+		coverImgAlt: "Nebula",
 		description:
 			"NaDa uses the NASA Image and Video Library API in order to display images based on user input.",
-		githubLink: "githubLink",
-		deployment: "liveSite",
+		githubLink: "https://github.com/NaDa-nasa-viewer/NaDa",
+		deployment: "https://nada-nasa-viewer.github.io/NaDa/",
+	},
+	{
+		name: "Colorful Palettes",
+		coverImg: "colopale.jpg",
+		coverImgAlt:
+			"Some colorful rectangles beneath the text 'Colorful Palettes'",
+		description:
+			"Design or generate color palettes that can be saved within the browser.",
+		githubLink: "https://github.com/nicoleblanchette/colorful-palettes",
+		deployment: "https://nicoleblanchette.github.io/colorful-palettes/",
 	},
 ];

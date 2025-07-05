@@ -1,7 +1,13 @@
+import CollectiveSrc from '../../media/collective.jpg'
+import JobSpicySrc from '../../media/job-spicy.jpg'
+import FlappyBirdSrc from '../../media/flappy-bird.jpg'
+import NaDaSrc from '../../media/nada.jpg'
+import ColopaleSrc from '../../media/colopale.jpg'
+
 export const projects = [
 	{
 		name: "Collective",
-		coverImg: "collective.jpg",
+		coverImg: CollectiveSrc,
 		coverImgAlt: "Inside of closet",
 		description:
 			"Collective allows users to give and receive free clothing in their area, combating textile waste and strengthening communities.",
@@ -10,7 +16,7 @@ export const projects = [
 	},
 	{
 		name: "Job Spicy",
-		coverImg: "job-spicy.jpg",
+		coverImg: JobSpicySrc,
 		coverImgAlt: "A pile of chili peppers",
 		description:
 			"JobSpicy is a global remote job board. Jobs can be narrowed down by keyword, industry, and location for a more personalized experience.",
@@ -19,7 +25,7 @@ export const projects = [
 	},
 	{
 		name: "Flappy Bird",
-		coverImg: "flappy-bird.jpg",
+		coverImg: FlappyBirdSrc,
 		coverImgAlt: "Screenshot of a flappy bird clone",
 		description: "A clone of the viral game!",
 		githubLink: "https://github.com/nicoleblanchette/flappy-bird",
@@ -27,7 +33,7 @@ export const projects = [
 	},
 	{
 		name: "NaDa - NASA Viewer",
-		coverImg: "nada.jpg",
+		coverImg: NaDaSrc,
 		coverImgAlt: "Nebula",
 		description:
 			"NaDa uses the NASA Image and Video Library API in order to display images based on user input.",
@@ -36,7 +42,7 @@ export const projects = [
 	},
 	{
 		name: "Colorful Palettes",
-		coverImg: "colopale.jpg",
+		coverImg: ColopaleSrc,
 		coverImgAlt:
 			"Some colorful rectangles beneath the text 'Colorful Palettes'",
 		description:

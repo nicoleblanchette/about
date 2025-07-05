@@ -5,8 +5,9 @@ export const Timeline = () => {
 			{timelineData.map((role, i) => {
 				return (
 					<li key={i}>
-						{role.title !==
-							"Senior Associate Software Engineer" && <hr className="bg-primary" />}
+						{role.title !== "Senior Associate Software Engineer" && (
+							<hr className='bg-primary' />
+						)}
 						<div className='timeline-middle'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -22,13 +23,18 @@ export const Timeline = () => {
 							</svg>
 						</div>
 						<div className='timeline-end md:mb-10'>
-              <time className='font-mono italic'>{role.time}</time>
+							<time className='font-mono italic'>{role.time}</time>
 							<div className='text-lg font-black flex gap-1'>
-                {role.title}{role.company && <p className="font-normal italic">@ {role.company}</p>}
+								{role.title}
+								{role.company && (
+									<p className='font-normal italic'>@ {role.company}</p>
+								)}
 							</div>
-              <p>{role.description}</p>
+							<p>{role.description}</p>
 						</div>
-						{role.company !== "The Marcy Lab School" && <hr className="bg-primary"/>}
+						{role.company !== "The Marcy Lab School" && (
+							<hr className='bg-primary' />
+						)}
 					</li>
 				);
 			})}

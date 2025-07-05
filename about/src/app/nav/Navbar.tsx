@@ -1,11 +1,21 @@
 export const Navbar = () => {
 	return (
-		<div className='navbar bg-base-100 font-header sticky top-0 z-10'>
+		<nav
+			className='navbar bg-base-100 font-header sticky top-0 z-10'
+			aria-label='Main navigation'
+		>
 			<div className='flex-1'>
-				<a className='btn btn-ghost text-3xl font-bold'>Nicole Blanchette</a>
+				<a className='btn btn-ghost text-3xl font-bold' href='#about'>
+					Nicole Blanchette
+				</a>
 				<label className='swap swap-rotate'>
 					{/* this hidden checkbox controls the state */}
-					<input type='checkbox' className='theme-controller' value='light' />
+					<input
+						type='checkbox'
+						className='theme-controller'
+						value='light'
+						aria-label='Theme Toggle'
+					/>
 
 					{/* sun icon */}
 					<svg
@@ -26,28 +36,30 @@ export const Navbar = () => {
 					</svg>
 				</label>
 			</div>
-			<div className='flex-none'>
+			<div className='flex-none max-sm:hidden'>
 				<ul className='menu menu-horizontal px-1 text-3xl font-light items-center'>
 					<li>
 						<a href='#about' className='scroll-smooth'>
 							About
 						</a>
 					</li>
-					<p>✧</p>
+					<li>✧</li>
 					<li>
 						<a href='#projects'>Projects</a>
 					</li>
-					<p>✧</p>
+					<li>✧</li>
 					<li>
 						<details>
 							<summary>Contact</summary>
 							<ul className='bg-base-100 rounded-t-none p-2'>
 								<li>
-											<a
-							href='https://github.com/nicoleblanchette'
-							target='_blank'
-							rel='noopener noreferrer'
-						>GitHub</a>
+									<a
+										href='https://github.com/nicoleblanchette'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										GitHub
+									</a>
 								</li>
 								<li>
 									<a
@@ -71,6 +83,58 @@ export const Navbar = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+			<div className='sm:hidden'>
+				<ul className='menu menu-horizontal px-1 text-3xl font-light items-center'>
+					<li>
+						<details className="open:mr-10 duration-300 transition-all">
+							<summary>Menu</summary>
+							<ul className='bg-base-100 rounded-t-none p-2'>
+								<li>
+									<a href='#about' className='scroll-smooth'>
+										About
+									</a>
+								</li>
+								<li>
+									<a href='#projects'>Projects</a>
+                </li>
+                	<li>
+						<details>
+							<summary>Contact</summary>
+							<ul className='bg-base-100 rounded-t-none p-2'>
+								<li>
+									<a
+										href='https://github.com/nicoleblanchette'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										GitHub
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://linkedin.com/in/nicole-blanchette'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										LinkedIn
+									</a>
+								</li>
+								<li>
+									<a
+										href='mailto:nicolesupdates@gmail.com'
+										rel='noopener noreferrer'
+									>
+										Email
+									</a>
+								</li>
+							</ul>
+						</details>
+					</li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	);
 };

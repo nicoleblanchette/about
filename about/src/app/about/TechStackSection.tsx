@@ -28,6 +28,7 @@ export const TechStackSection = ({ section }: Props) => {
 									aria-label={skill.alt}
 									target='_blank'
 									rel='noopener noreferrer'
+									className='hover:fill-primary fill-base-content'
 								>
 									{parse(skill.icon)}
 								</a>

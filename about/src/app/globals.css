@@ -1,28 +1,26 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark;
+	themes: light --default, dark --prefersdark;
 }
 @plugin "daisyui/theme" {
-  name: "light";
-  default: true;
-   --color-primary: #070707;
- /* --color-secondary: teal; */
-  --color-base-100: #b7b7b7; 
-  --color-base-content: #070707;
+	name: "light";
+	default: true;
+	--color-primary: #77005b;
+	/* --color-secondary: teal; */
+	--color-base-100: #b7b7b7;
+	--color-base-content: #070707;
 }
 
 @plugin "daisyui/theme" {
-    name: "dark";
-    prefersdark: true;
-   /* --color-primary: #070707;
- /* --color-secondary: teal; 
+	name: "dark";
+	prefersdark: true;
+	--color-primary: #a361d8;
+	/* --color-secondary: teal; 
   --color-base-100: #b7b7b7; 
   --color-base-content: #070707; */
 }
-
-:root {
-	/* --background: #1d232a; */
-	/* --foreground: #171717; */
+@custom-variant {
+	fill: [ "hover", "focus"];
 }
 
 @theme inline {
@@ -33,19 +31,8 @@
 	--font-header: var(--font-imbue);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		/* --background: #0a0a0a; */
-		/* --foreground: #ededed; */
-	}
-}
-
 body {
 	background: var(--background);
 	color: var(--foreground);
 	font-family: "Geist";
-}
-
-btn-primary {
-  /* background-color: aliceblue; */
 }

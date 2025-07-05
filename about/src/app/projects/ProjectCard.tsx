@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type Props = {
 	project: {
 		name: string;
 		description: string;
-		coverImg: string;
+		coverImg: StaticImageData;
 		coverImgAlt: string;
 		githubLink: string;
 		deployment: string;
@@ -15,9 +15,9 @@ export const ProjectCard = ({ project }: Props) => {
 		<div className='card bg-base-100 w-96 my-5 rounded-1 border-1 hover:scale-103 transition-all'>
 			<figure>
 				<Image
-					className='border-b-1 object-cover h-70 w-full' //replace with next Image
+					className='border-b-1 object-cover h-70 w-full border-base-content' //replace with next Image
 					src={project.coverImg}
-					alt={project.coverImgAlt}
+          alt={project.coverImgAlt}
 				/>
 			</figure>
 			<div className='card-body'>
@@ -29,12 +29,13 @@ export const ProjectCard = ({ project }: Props) => {
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<button className='btn btn-primary btn-outline'>
+						<button className='btn btn-primary btn-outline' aria-label="View GitHub">
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width={24}
 								height={24}
-								viewBox='0 0 24 24'
+                viewBox='0 0 24 24'
+    
 							>
 								<path
 									fill='currentColor'
@@ -49,7 +50,7 @@ export const ProjectCard = ({ project }: Props) => {
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						<button className='btn btn-primary btn-outline'>
+						<button className='btn btn-primary btn-outline' aria-label="View Live Deployment">
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='24'

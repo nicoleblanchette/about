@@ -1,2 +1,2 @@
-# about
-Future portfolio site
+# Nicole Blanchette's Portfolio Site
+Thank you for stopping by!
